@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let's know about Type Aliases vs Interfaces in TypeScript. TypeScript gives us two ways to describe the shape of data: `type` aliases and `interface`. They look similar, but they work differently in a few important ways. Knowing differences helps us to pick the right path.
+ TypeScript gives us two ways to describe the shape of data: `type` aliases and `interface`. They look similar, but they work differently in a few important ways. Knowing differences helps us to pick the right path.
 
 ## What They Share
 
@@ -63,9 +63,7 @@ const employee: IEmployee = {
 };
 ```
 
-So, This is useful when the same object shape is described in multiple place.
-
-**3. Extension style:** Interfaces use `extends`, like `Cat extends Animal`. Types use the intersection operator `&`, like `Car = Vehicle & { ... }`. Both give the same result: a new type with all the properties.
+**3. Extension style:** Interfaces use `extends`, like `Cat extends Animal`. Types use the intersection operator `&`, like `Car = Vehicle & { ... }`.
 
 ## When to Choose Which
 
@@ -73,4 +71,4 @@ So, This is useful when the same object shape is described in multiple place.
 
 ## Conclusion
 
-Interfaces are best for describing objects that can grow. Type aliases are more flexible for composing types. Pick one style for objects and stay consistent across project.
+Interfaces are best for describing objects that can grow. Type aliases are more flexible for composing types.
